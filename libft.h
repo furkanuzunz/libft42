@@ -16,8 +16,9 @@ int ft_memcmp(const void *str1,const void *str2,size_t n);
 
 char *ft_strdup(const char *str);
 char *ft_itoa(int n);
-
-
+char *ft_substr(const char *str,unsigned int start,size_t len);
+char *ft_strchr(const char *s,int d);
+char *ft_strjoin(const char *str1,const char *str2);
 
 
 void ft_bzero(void *s,int n);
@@ -26,4 +27,5 @@ void *ft_memchr(const void *s,int a,size_t n);
 void *ft_memcpy(void *dest,const void *src,size_t sizek);
 void *ft_memmove(void *dest,const void *src,size_t n);
 void *ft_memset(void *s,int c,size_t n);
+void ft_striteri(char *s,void (*f)(unsigned int,char *));
 
